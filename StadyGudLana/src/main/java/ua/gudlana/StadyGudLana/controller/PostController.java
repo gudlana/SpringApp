@@ -1,22 +1,31 @@
 package ua.gudlana.StadyGudLana.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+import ua.gudlana.StadyGudLana.data.domain.Post;
 import ua.gudlana.StadyGudLana.data.domain.User;
 import ua.gudlana.StadyGudLana.model.PostRequestDto;
 import ua.gudlana.StadyGudLana.model.PostResponseDto;
 import ua.gudlana.StadyGudLana.service.PostService;
 
 import javax.websocket.server.PathParam;
+import java.util.List;
 
 @RestController
 public class PostController {
 
     @Autowired
     PostService postService;
+
+    @GetMapping("api/posts")
+    public List<PostResponseDto> getAllPosts(){
+        return postService.getPostsList();
+    }
+
+    @GetMapping("api/posts/{authorId}")
+    public List<PostResponseDto> getAllPostsByAuthorId(@PathVariable String authorId){
+        return postService.getPostsByAuthorId(authorId);
+    }
 
     @PostMapping("api/post/create")
     public PostResponseDto create(@RequestBody PostRequestDto request){

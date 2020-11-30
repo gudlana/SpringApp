@@ -19,8 +19,6 @@ public class Comment {
 
     public String text;
 
-//    public String postId;
-
     public String userId;
 
     public Date dateCreate;

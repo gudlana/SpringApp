@@ -23,6 +23,11 @@ public class PostService {
     @Autowired
     UserRepository userRepository;
 
+    public List<Post> getPostsList(){
+      //  List<PostResponseDto> postsDto = new ArrayList<>();
+        return postRepository.findAll();
+    }
+
     public PostResponseDto createPost(PostRequestDto request) {
 
         Post post = new Post();
@@ -97,5 +102,15 @@ public class PostService {
         user.username = username;
 
         return userRepository.save(user);
+    }
+
+    public List<PostResponseDto> getPostsByAuthorId(String authorId) {
+        List<PostResponseDto> postsDto = new ArrayList<>();
+        List<Post> posts = postRepository.findAllByAuthorId(authorId);
+         for(Post p : posts){
+            PostResponseDto dto = mappingToPostResponseDto(p);
+            postsDto.add(dto);
+         }
+         return postsDto;
     }
 }
