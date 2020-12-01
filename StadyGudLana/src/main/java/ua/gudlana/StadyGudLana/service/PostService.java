@@ -23,9 +23,29 @@ public class PostService {
     @Autowired
     UserRepository userRepository;
 
-    public List<Post> getPostsList(){
-      //  List<PostResponseDto> postsDto = new ArrayList<>();
-        return postRepository.findAll();
+    List<PostResponseDto> postsDto;
+
+    public List<PostResponseDto> getPostsList(){
+        List<Post> posts = postRepository.findAll();
+        return postsDto = mappingToPostResponseDto(posts);
+    }
+
+    public List<PostResponseDto> getPostsListByAuthorId(String authorId) {
+         List<Post> posts = postRepository.findAllByAuthorId(authorId);
+         return postsDto = mappingToPostResponseDto(posts);
+    }
+
+    private List<PostResponseDto> mappingToPostResponseDto(List<Post> posts) {
+
+        for(Post p : posts){
+           PostResponseDto postDto = new PostResponseDto();
+           postDto.description = p.description;
+           postDto.dateCreate = p.dateCreate;
+           postDto.author = getUserDto(p.authorId);
+           postDto.comments = getCommentDto(p.comments);
+           postsDto.add(postDto);
+        }
+        return postsDto;
     }
 
     public PostResponseDto createPost(PostRequestDto request) {
@@ -104,13 +124,7 @@ public class PostService {
         return userRepository.save(user);
     }
 
-    public List<PostResponseDto> getPostsByAuthorId(String authorId) {
-        List<PostResponseDto> postsDto = new ArrayList<>();
-        List<Post> posts = postRepository.findAllByAuthorId(authorId);
-         for(Post p : posts){
-            PostResponseDto dto = mappingToPostResponseDto(p);
-            postsDto.add(dto);
-         }
-         return postsDto;
-    }
+
+
+
 }

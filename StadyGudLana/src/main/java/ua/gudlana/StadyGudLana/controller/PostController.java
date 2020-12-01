@@ -18,13 +18,13 @@ public class PostController {
     PostService postService;
 
     @GetMapping("api/posts")
-    public List<Post> getAllPosts(){
+    public List<PostResponseDto> getAllPosts(){
         return postService.getPostsList();
     }
 
     @GetMapping("api/posts/{authorId}")
-    public List<PostResponseDto> getAllPostsByAuthorId(@PathVariable String authorId){
-        return postService.getPostsByAuthorId(authorId);
+    public List<PostResponseDto> getAllPostsListByAuthorId(@PathVariable String authorId){
+        return postService.getPostsListByAuthorId(authorId);
     }
 
     @PostMapping("api/post/create")
