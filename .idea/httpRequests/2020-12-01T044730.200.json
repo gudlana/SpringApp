@@ -1,0 +1,12 @@
+[
+  {
+    "id": null,
+    "dateCreate": "2020-11-30T13:16:56.993+00:00",
+    "description": "new post",
+    "author": {
+      "id": "5fc4cd2777cbd76e1464fc37",
+      "username": "username"
+    },
+    "comments": null
+  }
+]

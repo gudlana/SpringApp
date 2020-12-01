@@ -1,0 +1,333 @@
+GET http://localhost:8080/api/posts?=
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2020-12-01T044730.200.json
+
+###
+
+GET http://localhost:8080/api/posts?=
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2020-12-01T044708.200.json
+
+###
+
+GET http://localhost:8080/api/posts?=
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2020-12-01T044705.200.json
+
+###
+
+GET http://localhost:8080/api/posts?=&authorId=5fc4cd2777cbd76e1464fc37
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2020-12-01T044646.200.json
+
+###
+
+GET http://localhost:8080/api/posts
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2020-12-01T044632.200.json
+
+###
+
+GET http://localhost:8080/api/posts
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2020-12-01T044122.200.json
+
+###
+
+GET http://localhost:8080/api/posts?=&authorId=5fc4cd2777cbd76e1464fc37
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2020-12-01T044045.200.json
+
+###
+
+GET http://localhost:8080/api/posts?=&authorId=5fc4cd2777cbd76e1464fc37
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+###
+
+GET http://localhost:8080/api/posts?=&authorId=5fc4cd2777cbd76e1464fc37
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2020-11-30T041607.200.json
+
+###
+
+POST http://localhost:8080/api/user/create/username?=&username=Gudlana
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2020-11-30T034121.200.json
+
+###
+
+POST http://localhost:8080/api/user/create?=&username=Gudlana
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2020-11-30T034101.404.json
+
+###
+
+GET http://localhost:8080/api/posts?=&authorId=5fc4cd2777cbd76e1464fc37
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2020-11-30T033930.200.json
+
+###
+
+GET http://localhost:8080/api/posts/authorId?=&authorId=5fc4cd2777cbd76e1464fc37
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2020-11-30T033509.404.json
+
+###
+
+GET http://localhost:8080/api/posts/{authorId}?=&authorId=5fc4cd2777cbd76e1464fc37
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+###
+
+GET http://localhost:8080/api/posts/authorId%20?=&authorId=5fc4cd2777cbd76e1464fc37
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2020-11-30T033019.404.json
+
+###
+
+GET http://localhost:8080/api/posts
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2020-11-30T031830.200.json
+
+###
+
+POST http://localhost:8080/api/post/create
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{  "description" : "new post",  "authorId" : "5fc4cd2777cbd76e1464fc37" }
+
+<> 2020-11-30T031657.200.json
+
+###
+
+POST http://localhost:8080/api/post/create
+Accept: */*
+Cache-Control: no-cache
+
+{  "description" : "new post",  "authorId" : "5fc4cd2777cbd76e1464fc37" }
+
+<> 2020-11-30T030929.415.json
+
+###
+
+POST http://localhost:8080/api/post/create
+Accept: */*
+Cache-Control: no-cache
+
+{  "description" : "new post",  "authorId" : "5fc4cd2777cbd76e1464fc37" }
+
+<> 2020-11-30T030645.415.json
+
+###
+
+POST http://localhost:8080/api/post/create
+Accept: */*
+Cache-Control: no-cache
+
+{     "description" : "new post",     "authorId" : "5fc4cd2777cbd76e1464fc37" }
+
+<> 2020-11-30T030601.415.json
+
+###
+
+POST http://localhost:8080/api/post/create
+Accept: */*
+Cache-Control: no-cache
+
+{     "description" : "new post",     "authorId" : "5fc4cd2777cbd76e1464fc37" }
+
+<> 2020-11-30T030533.415.json
+
+###
+
+GET http://localhost:8080/api/posts
+Accept: */*
+Cache-Control: no-cache
+
+<> 2020-11-30T030054.200.json
+
+###
+
+POST http://localhost:8080/api/post/create?description=new post&authorId=5fc4cd2777cbd76e1464fc37
+Accept: */*
+Cache-Control: no-cache
+
+<> 2020-11-30T025454.415.json
+
+###
+
+POST http://localhost:8080/api/post/create?description=new post&authorId=5fc4cd2777cbd76e1464fc37
+Accept: */*
+Cache-Control: no-cache
+
+<> 2020-11-30T025322.415.json
+
+###
+
+POST http://localhost:8080/api/post/create
+Accept: */*
+Cache-Control: no-cache
+
+<> 2020-11-30T010821.400.json
+
+###
+
+POST http://localhost:8080/api/post/create?authorId=5fc4cd2777cbd76e1464fc37&description=sdfsdfs
+Accept: */*
+Cache-Control: no-cache
+
+<> 2020-11-30T125022.400.json
+
+###
+
+POST http://localhost:8080/api/post/create
+Accept: */*
+Cache-Control: no-cache
+
+5fc4cd2777cbd76e1464fc37
+
+<> 2020-11-30T124930.415.json
+
+###
+
+POST http://localhost:8080/api/post/create
+Accept: */*
+Cache-Control: no-cache
+
+5fc4cd2777cbd76e1464fc37
+
+<> 2020-11-30T124912.415.json
+
+###
+
+POST http://localhost:8080/api/post/create?description=dfsdfsdf&authorId=5fc4cd2777cbd76e1464fc37
+Accept: */*
+Cache-Control: no-cache
+
+<> 2020-11-30T124808.415.json
+
+###
+
+POST http://localhost:8080/api/post/create
+Accept: */*
+Cache-Control: no-cache
+
+<> 2020-11-30T124701.415.json
+
+###
+
+POST http://localhost:8080/api/user/create/username?username=Lana
+Accept: */*
+Cache-Control: no-cache
+
+<> 2020-11-30T124455.200.json
+
+###
+
+POST http://localhost:8080/api/user/create/{username}?username=Lana
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+POST http://localhost:8080/api/user/create/{username}?username=Lana
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+POST http://localhost:8080/api/user/create/{username}?username=Lana
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+POST http://localhost:8080/api/user/create/username}?username=Lana
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+POST http://localhost:8080/api/user/create/username}?username=Lana
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+POST http://localhost:8080/api/user/create/username}?username=Lana
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+POST http://localhost:8080/api/user/create/?username=Lana
+Accept: */*
+Cache-Control: no-cache
+
+<> 2020-11-30T115448.404.json
+
+###
+
+POST http://localhost:8080/api/user/create?username=Lana
+Accept: */*
+Cache-Control: no-cache
+
+<> 2020-11-30T115415.404.json
+
+###
+
+POST http://localhost:8080/api/user/create/{username}?username=Lana
+Accept: */*
+Cache-Control: no-cache
+
+###
+

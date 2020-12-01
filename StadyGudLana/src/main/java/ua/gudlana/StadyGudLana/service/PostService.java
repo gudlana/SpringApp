@@ -36,7 +36,6 @@ public class PostService {
     }
 
     private List<PostResponseDto> mappingToPostResponseDto(List<Post> posts) {
-
         for(Post p : posts){
            PostResponseDto postDto = new PostResponseDto();
            postDto.description = p.description;
@@ -46,6 +45,15 @@ public class PostService {
            postsDto.add(postDto);
         }
         return postsDto;
+    }
+
+    private PostResponseDto mappingToPostResponseDto(Post entity) {
+
+        PostResponseDto postDto = new PostResponseDto();
+        postDto.description = entity.description;
+        postDto.author = getUserDto(entity.authorId);
+        postDto.comments = getCommentDto(entity.comments);
+        return  postDto;
     }
 
     public PostResponseDto createPost(PostRequestDto request) {
@@ -75,15 +83,6 @@ public class PostService {
         postRepository.save(post);
 
         return mappingToPostResponseDto(post);
-    }
-
-    private PostResponseDto mappingToPostResponseDto(Post entity) {
-
-        PostResponseDto postDto = new PostResponseDto();
-        postDto.description = entity.description;
-        postDto.author = getUserDto(entity.authorId);
-        postDto.comments = getCommentDto(entity.comments);
-        return  postDto;
     }
 
     private UserDto getUserDto(String authorId) {
