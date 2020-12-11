@@ -12,6 +12,10 @@ import java.util.List;
 @Setter
 public class PostRequestDto {
 
+    public String title;
+
+    public String tag;
+
     public String description;
 
     public String authorId;

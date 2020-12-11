@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+  layout:decorate="~{fragments/main_layout}">
+<head>
+<title>Новини</title>
+</head>
+<body>
+
+    <div layout:fragment="content" class="container mySpace">
+        <a class="btn btn-primary" href="#">Додати новину</a>
+            <div class="jumbotron">
+                <div th:each="post : ${news}">
+                <div class="card border-secondary mb-3" style="max-width: 100rem;">
+                  <div class="card-header" th:text="${post.tag}"></div>
+                  <div class="card-body">
+                    <h4 class="card-title" th:text="${post.title}"></h4>
+                    <p class="card-text" th:text="${post.description}"></p>
+                  </div>
+                  <div class="card-footer text-muted" th:text="${post.authorId}"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

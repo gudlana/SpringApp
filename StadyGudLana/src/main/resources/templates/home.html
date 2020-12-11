@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+  layout:decorate="~{fragments/main_layout}">
+<head>
+<title>Головна сторінка</title>
+</head>
+<body>
+
+<div layout:fragment="content" class="container mySpace">
+    <div class="jumbotron">
+        <h1>Welcome!</h1>
+        <p>Для початку роботи авторизуйтеся <a th:href="@{/login}">тут</a></p>
+    </div>
+
+</div>
+
+</body>
+</html>

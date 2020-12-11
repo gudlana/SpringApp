@@ -14,6 +14,10 @@ public class PostResponseDto {
 
     public String id;
 
+    public String title;
+
+    public String tag;
+
     public Date dateCreate;
 
     public String description;

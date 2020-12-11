@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{fragments/main_layout}">
+<head>
+<title>Dashboard</title>
+</head>
+    <body>
+        <div layout:fragment="content" class="container mySpace">
+        <legend>Довідник ролей</legend>
+           <table class="table table-hover">
+             <thead>
+               <tr>
+                 <th scope="col">№ пп</th>
+                 <th scope="col">Коротка назва ролі</th>
+                 <th scope="col">Опис</th>
+                 <th scope="col">Дія</th>
+               </tr>
+             </thead>
+             <tbody class="table-light">
+                <tr th:each="role,stat:${roles}">
+                 <td th:text="${stat.count}"></td>
+                 <td th:text="${role.role}"></td>
+                 <td th:text="${role.description}"></td>
+                 <td>
+                    <a href="#" th:href="@{/editRole/{id} (id=${role.id})}">Редагувати</a>
+                 <!--   <a href="#" th:href="@{/dashboard/role/delete/{id} (id=${role.id})}">Видалити</a>-->
+                 </td>
+               </tr>
+             </tbody>
+           </table>
+           <br>
+           <a th:href="@{/addRole}">Додати роль</a>
+        </div>
+
+    </body>
+</html>

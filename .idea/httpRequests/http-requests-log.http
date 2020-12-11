@@ -1,3 +1,202 @@
+POST http://localhost:8080/api/post/create
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+###
+
+POST http://localhost:8080/api/post/create
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+###
+
+POST http://localhost:8080/api/post/create
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+###
+
+POST http://localhost:8080/api/post/create
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+###
+
+POST http://localhost:8080/api/post/create
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{         "title" : "Happy Birthday!",      "tag" : "привітання",      "description" : "Вітамо з днем нарождення шановну Лідію Миколаївну!",    "authorId" : "5fcf7ddb8c25fc3da05276cb", }
+
+###
+
+POST http://http//localhost:8080
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{         "title" : "Happy Birthday!",      "tag" : "привітання",      "description" : "Вітамо з днем нарождення шановну Лідію Миколаївну!",    "authorId" : "5fcf7ddb8c25fc3da05276cb", }
+
+###
+
+POST http://http//localhost:8080
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{         "title" : "Happy Birthday!",      "tag" : "привітання",      "description" : "Вітамо з днем нарождення шановну Лідію Миколаївну!",    "authorId" : "5fcf7ddb8c25fc3da05276cb", }
+
+###
+
+GET http://api.github.com/users/gudlana/repos
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{         "title" : "Happy Birthday!",      "tag" : "привітання",      "description" : "Вітамо з днем нарождення шановну Лідію Миколаївну!",    "authorId" : "5fcf7ddb8c25fc3da05276cb", }
+
+<> 2020-12-09T044447.200.json
+
+###
+
+GET http://api.github.com/gudlana/repos
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{         "title" : "Happy Birthday!",      "tag" : "привітання",      "description" : "Вітамо з днем нарождення шановну Лідію Миколаївну!",    "authorId" : "5fcf7ddb8c25fc3da05276cb", }
+
+<> 2020-12-09T044435.404.json
+
+###
+
+POST http://localhost:8080/api/post/create
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{         "title" : "Happy Birthday!",      "tag" : "привітання",      "description" : "Вітамо з днем нарождення шановну Лідію Миколаївну!",    "authorId" : "5fcf7ddb8c25fc3da05276cb", }
+
+###
+
+POST http://localhost:8080/api/post/create
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{         "title" : "Happy Birthday!",      "tag" : "привітання",      "description" : "Вітамо з днем нарождення шановну Лідію Миколаївну!",    "authorId" : "5fcf7ddb8c25fc3da05276cb", }
+
+###
+
+POST http://localhost:8080/api/post/create
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{         "title" : "Happy Birthday!",      "tag" : "привітання",      "description" : "Вітамо з днем нарождення шановну Лідію Миколаївну!",    "authorId" : "5fcf7ddb8c25fc3da05276cb", }
+
+###
+
+PUT http://localhost:8080/api/post/create
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{         "title" : "Happy Birthday!",      "tag" : "привітання",      "description" : "Вітамо з днем нарождення шановну Лідію Миколаївну!",    "authorId" : "5fcf7ddb8c25fc3da05276cb", }
+
+###
+
+PUT http://localhost:8080/api/post/create
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{         "title" : "Happy Birthday!",      "tag" : "привітання",      "description" : "Вітамо з днем нарождення шановну Лідію Миколаївну!",    "authorId" : "5fcf7ddb8c25fc3da05276cb", }
+
+###
+
+POST http://localhost:8080/api/post/create
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{         "title" : "Happy Birthday!",      "tag" : "привітання",      "description" : "Вітамо з днем нарождення шановну Лідію Миколаївну!",    "authorId" : "5fcf7ddb8c25fc3da05276cb", }
+
+###
+
+POST http://localhost:8080/api/post/create
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{         "title" : "Happy Birthday!",      "tag" : "привітання",      "description" : "Вітамо з днем нарождення шановну Лідію Миколаївну!",    "authorId" : "5fcf7ddb8c25fc3da05276cb", }
+
+###
+
+POST http://localhost:8080/api/post/create
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{         "title" : "Happy Birthday!",      "tag" : "привітання",      "description" : "Вітамо з днем нарождення шановну Лідію Миколаївну!",    "authorId" : "5fcf7ddb8c25fc3da05276cb", }
+
+###
+
+POST http://localhost:8080/api/post/create
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{         "title" : "Happy Birthday!",      "tag" : "привітання",      "description" : "Вітамо з днем нарождення шановну Лідію Миколаївну!",    "authorId" : "5fcf7ddb8c25fc3da05276cb", }
+
+###
+
+POST http://localhost:8080/api/post/create
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{         "title" : "Happy Birthday!",      "tag" : "привітання",      "description" : "Вітамо з днем нарождення шановну Лідію Миколаївну!",    "authorId" : "5fcf7ddb8c25fc3da05276cb", }
+
+###
+
+POST http://localhost:8080/api/post/create
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{      "title" : "Happy Birthday!",   "tag" : "привітання",   "description" : "Вітамо з днем нарождення шановну Лідію Миколаївну!", "authorId" : "5fcf7ddb8c25fc3da05276cb" }
+
+###
+
+POST http://localhost:8080/api/post/create
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{      "title" : "Happy Birthday!",   "tag" : "привітання",   "description" : "Вітамо з днем нарождення шановну Лідію Миколаївну!", "authorId" : "5fcf7ddb8c25fc3da05276cb" }
+
+###
+
+POST http://localhost:8080/api/post/create?title=Happy Birthday!&tag=привітання&description=Вітамо з днем нарождення шановну Лідію Миколаївну!&authorId=5fcf7ddb8c25fc3da05276cb
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+###
+
+POST http://localhost:8080/api/post/create?title=Happy Birthday!&tag=привітання&description=Вітамо з днем нарождення шановну Лідію Миколаївну!&authorId=5fcf7ddb8c25fc3da05276cb
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+###
+
 GET http://localhost:8080/api/posts?=
 Accept: */*
 Cache-Control: no-cache
@@ -236,98 +435,6 @@ Cache-Control: no-cache
 5fc4cd2777cbd76e1464fc37
 
 <> 2020-11-30T124930.415.json
-
-###
-
-POST http://localhost:8080/api/post/create
-Accept: */*
-Cache-Control: no-cache
-
-5fc4cd2777cbd76e1464fc37
-
-<> 2020-11-30T124912.415.json
-
-###
-
-POST http://localhost:8080/api/post/create?description=dfsdfsdf&authorId=5fc4cd2777cbd76e1464fc37
-Accept: */*
-Cache-Control: no-cache
-
-<> 2020-11-30T124808.415.json
-
-###
-
-POST http://localhost:8080/api/post/create
-Accept: */*
-Cache-Control: no-cache
-
-<> 2020-11-30T124701.415.json
-
-###
-
-POST http://localhost:8080/api/user/create/username?username=Lana
-Accept: */*
-Cache-Control: no-cache
-
-<> 2020-11-30T124455.200.json
-
-###
-
-POST http://localhost:8080/api/user/create/{username}?username=Lana
-Accept: */*
-Cache-Control: no-cache
-
-###
-
-POST http://localhost:8080/api/user/create/{username}?username=Lana
-Accept: */*
-Cache-Control: no-cache
-
-###
-
-POST http://localhost:8080/api/user/create/{username}?username=Lana
-Accept: */*
-Cache-Control: no-cache
-
-###
-
-POST http://localhost:8080/api/user/create/username}?username=Lana
-Accept: */*
-Cache-Control: no-cache
-
-###
-
-POST http://localhost:8080/api/user/create/username}?username=Lana
-Accept: */*
-Cache-Control: no-cache
-
-###
-
-POST http://localhost:8080/api/user/create/username}?username=Lana
-Accept: */*
-Cache-Control: no-cache
-
-###
-
-POST http://localhost:8080/api/user/create/?username=Lana
-Accept: */*
-Cache-Control: no-cache
-
-<> 2020-11-30T115448.404.json
-
-###
-
-POST http://localhost:8080/api/user/create?username=Lana
-Accept: */*
-Cache-Control: no-cache
-
-<> 2020-11-30T115415.404.json
-
-###
-
-POST http://localhost:8080/api/user/create/{username}?username=Lana
-Accept: */*
-Cache-Control: no-cache
 
 ###
 

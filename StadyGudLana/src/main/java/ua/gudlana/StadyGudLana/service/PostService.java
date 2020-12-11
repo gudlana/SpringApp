@@ -23,25 +23,20 @@ public class PostService {
     @Autowired
     UserRepository userRepository;
 
-    List<PostResponseDto> postsDto;
-
     public List<PostResponseDto> getPostsList(){
         List<Post> posts = postRepository.findAll();
-        return postsDto = mappingToPostResponseDto(posts);
+        return mappingToPostResponseDto(posts);
     }
 
     public List<PostResponseDto> getPostsListByAuthorId(String authorId) {
          List<Post> posts = postRepository.findAllByAuthorId(authorId);
-         return postsDto = mappingToPostResponseDto(posts);
+         return mappingToPostResponseDto(posts);
     }
 
     private List<PostResponseDto> mappingToPostResponseDto(List<Post> posts) {
+        List<PostResponseDto> postsDto = new ArrayList<>();
         for(Post p : posts){
-           PostResponseDto postDto = new PostResponseDto();
-           postDto.description = p.description;
-           postDto.dateCreate = p.dateCreate;
-           postDto.author = getUserDto(p.authorId);
-           postDto.comments = getCommentDto(p.comments);
+           PostResponseDto postDto = mappingToPostResponseDto(p);
            postsDto.add(postDto);
         }
         return postsDto;
@@ -50,7 +45,9 @@ public class PostService {
     private PostResponseDto mappingToPostResponseDto(Post entity) {
 
         PostResponseDto postDto = new PostResponseDto();
+        postDto.title = entity.title;
         postDto.description = entity.description;
+        postDto.tag = entity.tag;
         postDto.author = getUserDto(entity.authorId);
         postDto.comments = getCommentDto(entity.comments);
         return  postDto;
@@ -59,6 +56,8 @@ public class PostService {
     public PostResponseDto createPost(PostRequestDto request) {
 
         Post post = new Post();
+        post.title = request.title;
+        post.tag = request.tag;
         post.description = request.description;
         post.authorId = request.authorId;
         post.dateCreate = new Date();
@@ -90,8 +89,8 @@ public class PostService {
         UserDto userDto = new UserDto();
         User author = userRepository.findById(authorId).orElse(null);
         if (author != null) {
-            userDto.id = author.id;
-            userDto.username = author.username;
+            userDto.id = author.getId();
+            userDto.username = author.getUsername();
             return userDto;
         } else {
             return null;
@@ -114,16 +113,6 @@ public class PostService {
         }
         return commentsDto;
     }
-
-    public User createUser(String username) {
-
-        User user = new User();
-        user.username = username;
-
-        return userRepository.save(user);
-    }
-
-
 
 
 }
